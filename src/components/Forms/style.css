@@ -1,9 +1,8 @@
-.submit{
-    background-color: #5b5fdf;
-    text-transform: none;
+.botonb{
+    background-color: #5b5fdf  !important;
     height: 45px;
 }
-.submit:hover {
+.botonb:hover {
     background-color: #404294; 
   }
 .title{
