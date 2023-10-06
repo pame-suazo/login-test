@@ -63,6 +63,7 @@ const NavBar = () => {
               <ul>
                 <li><Link to="/home">Home</Link></li>
                 <li><Link to="/to-do-list">To Do List</Link></li>
+                <li><Link to="/pokemon">Pokémon</Link></li>
                 <li><Link to="/profile">Profile</Link></li>
                 <li  onClick={handleLogout}><Link to="/logout">Logout</Link></li>
               </ul>
@@ -73,6 +74,7 @@ const NavBar = () => {
         <ul className="desktop-menu ">
           <li><Link to="/home">Home</Link></li>
           <li><Link to="/to-do-list">To Do List</Link></li>
+          <li><Link to="/pokemon">Pokémon</Link></li>
           <li>
             <span className="user-menu-toggle" onMouseEnter={toggleUserMenu} onMouseLeave={toggleUserMenu}>
               Hi, {userName}

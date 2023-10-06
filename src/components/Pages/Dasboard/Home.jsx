@@ -6,9 +6,6 @@ export function Home() {
   const user = JSON.parse(localStorage.getItem('usuarioActual'));
   const userName = user ? user.nombre : '';
 
-
-
-  
   return (
     <div> 
       <NavBar className="navbar"/>

@@ -1,0 +1,90 @@
+.pokeIcon{
+    color: #dc6068;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.pokemon-container {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    width: 100%;
+    height: 87.7vh;
+    margin: 0 auto; 
+    background-image: url("https://www.legpuzzels.nl/wp-content/uploads/Pokémon-ravensburger100354_01-kinderpuzzels.nl_.jpg");
+    position: relative;
+  }
+ 
+  .poke-container{
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    border: 2px solid #3d6fb3;
+    background-color: white;
+    border-radius: 10px;
+    width: 850px;
+    height: 50vh;
+    margin: 0 auto; 
+    z-index: 2;
+  }
+  
+  .search-container {
+    flex: 40%;
+    padding: 0 20px;
+    text-align: center;
+    border-right: 1px solid #3d6fb3;
+    padding-right: 10px;
+    height: 40vh;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    z-index: 2;
+  }
+
+
+  .logo-container img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    
+  }
+  .input-container {
+    display: inline-flex;
+    align-items: center; 
+  
+  }
+ 
+  
+  .results-container {
+    flex: 60%;
+    padding: 0 20px;
+    margin-left: 20px;
+    z-index: 2;
+  }
+  .poke-input{
+    width: 50px;
+ 
+  }
+  h2{
+    text-transform: uppercase;
+    color: #3d6fb3;
+  }
+  
+  .flex {
+    display: flex;
+    align-items: center; 
+  }
+
+  .overlai{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
