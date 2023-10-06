@@ -25,7 +25,7 @@ export function ToDoList() {
       localStorage.setItem('tasks', JSON.stringify(tasks));
     }, [tasks]);
   
-    // Cargar tareas desde localStorage al cargar la página
+
     useEffect(() => {
       const storedTasks = JSON.parse(localStorage.getItem('tasks'));
       if (storedTasks) {

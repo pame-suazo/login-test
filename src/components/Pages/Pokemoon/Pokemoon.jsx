@@ -3,7 +3,7 @@ import NavBar from '../../NavBar/NavBar';
 import Avatar from '@mui/material/Avatar';
 import CatchingPokemonIcon from '@mui/icons-material/CatchingPokemon';
 import SentimentVeryDissatisfiedIcon from '@mui/icons-material/SentimentVeryDissatisfied';
-import './Pokemoon.css'; // Importa el archivo CSS
+import './Pokemoon.css'; 
 
 export function Pokemoon() {
   const [pokemonName, setPokemonName] = useState('');

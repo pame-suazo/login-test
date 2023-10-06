@@ -16,7 +16,7 @@ const NavBar = () => {
   const handleLogout = () => {
     localStorage.removeItem('usuarioActual');
     setIsLogoutClicked(true);
-    navigate('/login'); // Redirige al usuario a la página de login después del logout
+    navigate('/login'); 
   };
 
   const toggleMobileMenu = () => {
