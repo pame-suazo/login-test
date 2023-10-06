@@ -1,0 +1,144 @@
+/* NavigationBar.css */
+
+nav {
+    background-color: white;
+    color: #5b5fdf;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Añadir relleno para espaciar los elementos internos */
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 50px; /* Tamaño del logotipo */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin-right: 20px; /* Espaciado entre el logotipo y los enlaces */
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  li {
+    margin: 0 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #5b5fdf;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  a:hover {
+    color: black; /* Cambia el color al pasar el mouse */
+  }
+  
+  /* Estilos para pantallas grandes (por ejemplo, pantallas de escritorio) */
+  @media (min-width: 769px) {
+    .desktop-menu {
+      display: flex;
+      list-style: none;
+    }
+  
+    .desktop-menu li {
+      margin: 0 20px;
+    }
+  
+    .mobile-menu-icon {
+      display: none;
+    }
+  }
+  
+  /* Estilos para pantallas pequeñas (por ejemplo, teléfonos móviles) */
+  @media (max-width: 768px) {
+    .desktop-menu {
+      display: none;
+    }
+  
+    .mobile-menu-icon {
+      display: block;
+      font-size: 24px; /* Tamaño del ícono de menú hamburguesa */
+      cursor: pointer;
+      color: #5b5fdf; /* Color del ícono de menú hamburguesa */
+      margin-left: 20px;
+    }
+  }
+  
+  /* Estilos para la lista de navegación de escritorio */
+  .desktop-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .desktop-menu li {
+    margin-right: 20px;
+  }
+  
+  .desktop-menu a {
+    text-decoration: none;
+    color: #5b5fdf;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .desktop-menu a:hover {
+    color: black;
+  }
+  
+  /* Estilos para ocultar la lista de navegación de escritorio cuando el menú móvil está abierto */
+  .desktop-menu.hidden {
+    display: none;
+  }
+  
+  /* Estilos para el menú móvil */
+  .mobile-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 60px;
+    right: 20px;
+  }
+  
+  .mobile-menu li {
+    margin: 0;
+    padding: 10px 20px;
+  }
+  
+  .mobile-menu a {
+    text-decoration: none;
+    color: #5b5fdf;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .mobile-menu a:hover {
+    color: black;
+  }
+  .mobile-menu ul {
+    flex-direction: column;
+    padding: 0; /* Elimina el padding predeterminado de la lista */
+  }
+  
+  .mobile-menu ul li {
+    margin-bottom: 10px; /* Agrega margen inferior entre elementos de la lista */
+  }
+  

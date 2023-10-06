@@ -5,8 +5,9 @@
 .botonb:hover {
     background-color: #404294; 
   }
-.title{
-   font-weight: 400;
+.titlee{
+   font-weight: 500;
+   font-size: 30px;
 }
 .avatar{
     width: 100;
@@ -16,4 +17,5 @@
 
 .inputs{
     margin-bottom: 3;
+   
 }
