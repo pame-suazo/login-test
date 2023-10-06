@@ -15,6 +15,7 @@ export function Login() {
     const usuariosPermitidos = [
       { usuario: 'pame', contraseña: 'pame123', nombre:'Pamela' },
       { usuario: 'nico', contraseña: 'nico123', nombre: 'Nicole'},
+      {usuario: 'test', contraseña:'test', nombre:'Test'}
 
     ];
 
