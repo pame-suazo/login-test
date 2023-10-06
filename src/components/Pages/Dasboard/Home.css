@@ -1,5 +1,5 @@
 .home-background {
-  position: relative; /* Agregar posición relativa al fondo para permitir que el overlay esté encima */
+
   background-image: url('https://www.eltiempo.com/files/article_main_1200/uploads/2023/02/13/63eaf64168c8c.jpeg');
   background-size: cover;
   background-position: center;
@@ -8,41 +8,24 @@
   align-items: center;
   text-align: center;
   color: #fff;
-  height: 89vh;
+ 
 }
 
-.overlay {
-  position: absolute; /* Cambiar la posición a absoluta para superponerse al contenido */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 46vh;
-  background-color: rgba(21, 23, 76, 0.9);
-  z-index: 1;
+.contaiiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 89.9vh;
 }
 
-/* Agregar z-index al navbar para asegurarse de que esté por encima del overlay */
-.navbar {
-  z-index: 2;
-}
 
-.container {
-  max-width: 100%;
-  width: 90%;
-  margin: 0 auto;
-  padding: 20px;
-  z-index: 3; /* Asegurarse de que el contenido esté por encima del overlay y el navbar */
-}
-
-/* Resto de los estilos... */
-
-
-.content {
-  text-align: center;
+.conteent {
+  text-align: center; 
+  width: 450px;
 }
 
 h1 {
-  font-size: 3rem; /* Utilizar unidades relativas para el tamaño de fuente */
+  font-size: 3rem;
 }
 
 .highlighted-text {

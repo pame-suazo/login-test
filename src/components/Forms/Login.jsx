@@ -81,17 +81,21 @@ export function Login() {
           <Avatar alt="Avatar" src="https://drive.google.com/uc?expor=download&id=1XQgt69qRxKviDC1DdIKFDU18WXWZD1MS" sx={{ width: 100, height: 100, marginBottom: -4 }} />
           <h1 className="titlee">EasyCoach.Club</h1>
           <form onSubmit={handleSubmit}>
+           
             <TextField
               fullWidth
               label="User"
               variant="outlined"
               value={user}
               onChange={handleUserChange}
+              size="small"
+             
             />
+         
             <TextField
               fullWidth
+          size="small"
               label="Password"
-              className="inputs"
               variant="outlined"
               sx={{ marginBottom: 4 }}
               margin="normal"

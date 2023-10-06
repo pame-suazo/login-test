@@ -1,12 +1,10 @@
-/* NavigationBar.css */
-
 nav {
     background-color: white;
     color: #5b5fdf;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px; /* Añadir relleno para espaciar los elementos internos */
+    padding: 10px 20px; 
   }
   
   .logo-container {
@@ -15,9 +13,9 @@ nav {
   }
   
   .logo {
-    width: 50px; /* Tamaño del logotipo */
-    height: auto; /* Altura automática para mantener la proporción */
-    margin-right: 20px; /* Espaciado entre el logotipo y los enlaces */
+    width: 50px; 
+    height: auto; 
+    margin-right: 20px;
   }
   
   ul {
@@ -40,10 +38,10 @@ nav {
   }
   
   a:hover {
-    color: black; /* Cambia el color al pasar el mouse */
+    color: black; 
   }
   
-  /* Estilos para pantallas grandes (por ejemplo, pantallas de escritorio) */
+
   @media (min-width: 769px) {
     .desktop-menu {
       display: flex;
@@ -59,7 +57,7 @@ nav {
     }
   }
   
-  /* Estilos para pantallas pequeñas (por ejemplo, teléfonos móviles) */
+
   @media (max-width: 768px) {
     .desktop-menu {
       display: none;
@@ -67,14 +65,14 @@ nav {
   
     .mobile-menu-icon {
       display: block;
-      font-size: 24px; /* Tamaño del ícono de menú hamburguesa */
+      font-size: 24px; 
       cursor: pointer;
-      color: #5b5fdf; /* Color del ícono de menú hamburguesa */
+      color: #5b5fdf; 
       margin-left: 20px;
     }
   }
   
-  /* Estilos para la lista de navegación de escritorio */
+
   .desktop-menu {
     list-style: none;
     display: flex;
@@ -84,6 +82,7 @@ nav {
   
   .desktop-menu li {
     margin-right: 20px;
+    cursor: pointer;
   }
   
   .desktop-menu a {
@@ -98,12 +97,12 @@ nav {
     color: black;
   }
   
-  /* Estilos para ocultar la lista de navegación de escritorio cuando el menú móvil está abierto */
+ 
   .desktop-menu.hidden {
     display: none;
   }
   
-  /* Estilos para el menú móvil */
+
   .mobile-menu {
     list-style: none;
     margin: 0;
@@ -135,10 +134,33 @@ nav {
   }
   .mobile-menu ul {
     flex-direction: column;
-    padding: 0; /* Elimina el padding predeterminado de la lista */
+    padding: 0; 
   }
   
   .mobile-menu ul li {
-    margin-bottom: 10px; /* Agrega margen inferior entre elementos de la lista */
+    margin-bottom: 10px;
+  }
+  
+
+  .user-submenu {
+    position: absolute;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    z-index: 999; 
+    right: 10px;
+
+  }
+  .user-submenu li {
+    padding: 10px;
+    width: 100px;
+    cursor: pointer;
+  
+  }
+  .icon {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 8px; 
+    vertical-align: middle;
   }
   
